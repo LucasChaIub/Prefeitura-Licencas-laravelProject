@@ -19,17 +19,17 @@
                         <div class="col-span-6">
                             <label for="name" class="block text-lg font-medium leading-5 text-gray-700">
                                 {{ ('Nome:') }}
-                                <input id="name" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="nome" value="{{ old('nome') }}" required autocomplete="nome" autofocus>
+                                <input id="name" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="nome" value="{{ old('nome') }}" required autocomplete="nome" autofocus>
                         </div>
                         <div class="col-span-6 sm:col-span-3">
                             <label for="phone" class="block text-lg font-medium leading-5 text-gray-700">
                                 {{ ('Telefone:') }}
-                                <input id="phone" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus>
+                                <input id="phone" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus>
                         </div>
                         <div class="col-span-6 sm:col-span-3">
                             <label for="population" class="block text-lg font-medium leading-5 text-gray-700">
                                 {{ __('População:') }}
-                            <input id="population" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="population" value="{{ old('population') }}" required autocomplete="population" autofocus>
+                            <input id="population" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="population" value="{{ old('population') }}" required autocomplete="population" autofocus>
                         </div>
                     </div>
                     <div class="col-span-6 mt-6">

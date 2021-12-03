@@ -7,7 +7,7 @@
             <div class="overflow-x-auto w-full">
                 <table class="w-full whitespace-no-wrap">
                     <thead>
-                        <tr class="text-lg font-semibold tracking-wide text-left text-black-500 uppercase bg-yellow-300 border-b">
+                        <tr class="text-md font-semibold tracking-wide text-left text-black-500 uppercase bg-yellow-300 border-b">
                             <th class="px-4 py-3">Nomes</th>
                             <th class="px-4 py-3">Cidades</th>
                             <th class="px-4 py-3">Telefones</th>
