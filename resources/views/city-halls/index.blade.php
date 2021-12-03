@@ -43,7 +43,7 @@
         </div>
         <x-button>
             <a href="{{ route('city-halls.create', $cityHall) }}">
-                <strong>{{ __('Cadastrar')}}</strong>
+                <strong>{{ __('Cadastrar Prefeitura')}}</strong>
             </a>
         </x-button>
 </x-app-layout>
