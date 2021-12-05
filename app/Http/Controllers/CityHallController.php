@@ -16,7 +16,6 @@ class CityHallController extends Controller
             ->orderBy('name')
             ->latest()
             ->get();
-
         return view('city-halls.index', ['cityHalls' => $cityHalls ]);
     }
 
