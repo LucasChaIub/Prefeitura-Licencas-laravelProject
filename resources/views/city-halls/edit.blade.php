@@ -34,11 +34,16 @@
                                     {{ __('População:') }}
                                     <input id="population" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-yellow focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="population" value="{{ $cityHall->population }}" required autofocus>
                             </div>
-                            <div class="col-span-6">
+                            <div class="col-span-6 mt-6">
                                 <label for="city_id" class="block text-lg font-medium leading-5 text-gray-700">
                                     {{ __('Cidade:') }}
-                                    <input id="city_id" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-yellow focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="city_id" value="{{ $cityHall->city->name }}" required autofocus>
-                          </div>
+                                    <select id="city_id" class="mt-1 form-select block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="city_id" required>
+                                        <option value="city->name">Selecione uma Cidade</option>
+                                        @foreach ($cities as $city)
+                                            <option value="{{ $city->id }}">{{ $city->name }}</option>
+                                        @endforeach
+                                    </select>
+                            </div>
                       </div>
                       <div class="mt-6">
                         <x-button type="submit">Salvar</x-button>

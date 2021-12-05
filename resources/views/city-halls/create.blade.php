@@ -19,7 +19,7 @@
                         <div class="col-span-6">
                             <label for="name" class="block text-lg font-medium leading-5 text-gray-700">
                                 {{ ('Nome:') }}
-                                <input id="name" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="nome" value="{{ old('nome') }}" required autocomplete="nome" autofocus>
+                                <input id="name" type="text" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                         </div>
                         <div class="col-span-6 sm:col-span-3">
                             <label for="phone" class="block text-lg font-medium leading-5 text-gray-700">
