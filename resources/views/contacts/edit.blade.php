@@ -68,8 +68,8 @@
                           </div>
                       </div>
                       <div class="mt-6">
-                          <x-button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md text-white bg-yellow-300 hover:bg-yellow-500 focus:outline-none focus:border-black-100 focus:shadow-outline-yellow active:bg-blue-700 transition duration-150 ease-in-out">
-                              <strong>{{ __('Atualizar') }}</strong>
+                          <x-button type="submit">
+                              <strong>{{ __('Atualizar Contato') }}</strong>
                           </x-button>
                       </div>
                   </form>

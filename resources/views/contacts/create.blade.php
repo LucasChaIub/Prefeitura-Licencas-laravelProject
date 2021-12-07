@@ -25,7 +25,7 @@
                           <div class="col-span-6 sm:col-span-3">
                               <label for="term" class="block text-lg font-medium leading-5 text-gray-700">
                                   {{ __('Data:') }}
-                                  <input id="term" type="date" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="term" autocomplete="term" autofocus>
+                                  <input id="term" type="datetime" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="term" autocomplete="term" autofocus>
                               </label>
                           </div>
                           <div class="col-span-6 sm:col-span-3">
@@ -52,7 +52,7 @@
                           </div>
                       </div>
                       <div class="mt-6">
-                          <x-button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md text-white bg-yellow-300 hover:bg-yellow-600 focus:outline-none focus:border-black-100 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out">
+                          <x-button type="submit">
                               <strong>{{ __('Cadastrar Contato') }}</strong>
                           </x-button>
                       </div>
