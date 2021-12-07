@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\CityHallController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -37,5 +38,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('city-halls',CityHallController::class);
     Route::resource('cities',CityController::class);
     Route::resource('activities',ActivityController::class);
-    Route::resource('contacts',CityController::class);
+    Route::resource('contacts',ContactController::class);
 });

@@ -16,7 +16,7 @@ class CityHallController extends Controller
             ->orderBy('name')
             ->latest()
             ->get();
-        return view('city-halls.index', ['cityHalls' => $cityHalls ]);
+        return view('city-halls.index', ['cityHalls' => $cityHalls]);
     }
 
 
@@ -46,7 +46,8 @@ class CityHallController extends Controller
             ->select('id', 'name', 'term', 'city_hall_id', 'contact_type_id')
             ->with('contactType:id,name')
             ->withCount('activities')
-            ->latest()]);
+            ->latest()
+        ]);
         $cities = City::orderBy('name')->get('id', 'name');
         return view('city-halls.show', ['cityHall' => $cityHall, 'cities' => $cities]);
     }

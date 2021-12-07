@@ -18,7 +18,6 @@ class ContactController extends Controller
             ->orderBy('name')
             ->latest()
             ->get();
-        // dd($contacts);
         return view('contacts.index', ['contacts' => $contacts]);
     }
 
@@ -41,19 +40,22 @@ class ContactController extends Controller
             'contact_type_id' => 'required',
             'city_hall_id' => 'required',
         ]);
+
         $contacts = Contact::create($validateData);
+
         return redirect()->route('contacts.index', $contacts);
     }
+
 
     public function show(Contact $contact)
     {
         $contact->load(['cityHall'=> fn ($query) =>$query
-            ->select('cityHall:id,name,phone,city_id', 'contactType:id,name', 'cityHall.city:id,name')
-            ->with('cityHall:id,name,phone,city_id', 'contactType:id,name', 'cityHall.city:id,name')
+            ->select('cityHall:id,name,phone,city_id','contactType:id,name','cityHall.city:id,name')
+            ->with('cityHall:id,name,phone,city_id','contactType:id,name','cityHall.city:id,name')
             ->orderBy('name')
             ->latest()
-            ->get()
-        ]);
+            ->get()]);
+
         $cities = City::orderBy('name')->get('id', 'name');
         return view('contacts.show', ['contact' => $contact, 'cities' => $cities]);
     }
@@ -68,20 +70,27 @@ class ContactController extends Controller
     }
 
 
-    public function update(Request $request, Contact $contact)
+    public function update(Contact $contact, Request $request)
     {
-        $validatedData = $request->validate([
+
+        $validateData = $request->validate([
             'name' => 'required|max:255',
             'term' => 'required|max:255',
             'contact_type_id' => 'required',
-            'city_hall_id' => 'required'
+            'city_hall_id' => 'required',
         ]);
-        $contact->update($validatedData);
+
+        $contact->update($validateData);
+
         return redirect()->route('contacts.index', ['contact' => $contact]);
     }
 
-    public function destroy(Contact $contact)
+
+    public function destroy($id)
     {
-        return redirect()->route('contacts.index')->with('success', '<b>$contact->name</b> excluída.');
+        $contact = Contact::findOrFail($id);
+        $contact->delete();
+
+        return redirect()->route('contacts.index')->with('success', 'Contact deleted successfully');
     }
 }

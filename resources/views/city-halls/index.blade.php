@@ -23,6 +23,7 @@
                                 </td>
                                 <td class="px-4 py-3 text-lg">
                                     {{ $cityHall->city->name }}
+                                </td>
                                 <td class="px-4 py-3 text-lg">
                                     {{  $cityHall->phone }}
                                 </td>
