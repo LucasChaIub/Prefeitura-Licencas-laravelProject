@@ -8,9 +8,9 @@
               <table class="w-full whitespace-no-wrap">
                   <thead>
                       <tr class="text-md font-semibold tracking-wide text-left text-black-500 uppercase bg-yellow-300 border-b">
-                          <th class="px-4 py-3">Nomes</th>
-                          <th class="px-4 py-3">Estados</th>
-                          <th class="px-4 py-3">Prefeituras</th>
+                          <th class="px-4 py-3">Nome</th>
+                          <th class="px-4 py-3">Estado</th>
+                          <th class="px-4 py-3">Prefeitura</th>
                           <th class="px"></th>
                       </tr>
                   </thead>

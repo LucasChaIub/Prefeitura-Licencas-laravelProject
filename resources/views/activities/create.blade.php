@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header" class="text-lg">
-        {{ ('Cadastro de Eventos') }}
+        {{ ('Cadastro de Atividade') }}
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -27,8 +27,8 @@
                                 <label for="status" class="block text-lg font-medium leading-5 text-gray-700">
                                     {{ __('Status:') }}
                                     <select id="status" class="mt-1 form-select block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="status" required autocomplete="status" autofocus>
-                                        <option value="1">{{ __('Pendente') }}</option>
-                                        <option value="2">{{ __('Concluído') }}</option>
+                                        <option value="Pendente">{{ __('Pendente') }}</option>
+                                        <option value="Concluído">{{ __('Concluído') }}</option>
                                     </select>
                             </div>
                             <div class="col-span-6">
@@ -76,7 +76,7 @@
                         </div>
                         <div class="mt-6">
                             <x-button type="submit">
-                                <strong>{{ __('Cadastrar Evento') }}</strong>
+                                <strong>{{ __('Cadastrar Atividade') }}</strong>
                             </x-button>
                         </div>
                     </form>

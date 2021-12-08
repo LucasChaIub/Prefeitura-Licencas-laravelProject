@@ -24,8 +24,8 @@
                           </div>
                           <div class="col-span-6 sm:col-span-3">
                               <label for="term" class="block text-lg font-medium leading-5 text-gray-700">
-                                  {{ __('Data:') }}
-                                  <input id="term" type="datetime" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="term" autocomplete="term" autofocus>
+                                  {{ __('Data e Hora do Contato:') }}
+                                  <input id="term" type="datetime-local" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" name="term" required autocomplete="term" autofocus>
                               </label>
                           </div>
                           <div class="col-span-6 sm:col-span-3">

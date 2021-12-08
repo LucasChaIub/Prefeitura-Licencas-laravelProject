@@ -1,6 +1,6 @@
 <x-app-layout>
   <x-slot name="header">
-          {{ __('Eventos') }}
+          {{ __('Lista de Atividades') }}
   </x-slot>
   <div class="section">
       <div class="overflow-hidden mb-8 w-full rounded-lg border shadow-xs">
@@ -12,7 +12,7 @@
                               <th class="px-4 py-3">Data</th>
                               <th class="px-4 py-3">Descrição</th>
                               <th class="px-4 py-3">Status</th>
-                              <th class="px-4 py-3">Pendências</th>
+                              <th class="px-4 py-3">Pendência</th>
                               <th class="px-4 py-3">Receptividade</th>
                               <th class="px-4 py-3">Nome do Contato</th>
                               <th class="px-4 py-3"></th>
@@ -41,7 +41,7 @@
           </div>
           <x-button>
             <a href="{{ route('activities.create', $activity) }}">
-                <strong>{{ __('Cadastrar Evento')}}</strong>
+                <strong>{{ __('Cadastrar Atividade')}}</strong>
             </a>
         </x-button>
       </div>

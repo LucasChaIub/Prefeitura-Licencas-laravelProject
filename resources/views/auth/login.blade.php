@@ -7,9 +7,6 @@
         </div>
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
-                <h1 class="mb-4 text-xl font-semibold text-gray-700">
-                    Login
-                </h1>
 
                 <x-auth-validation-errors :errors="$errors"/>
 
@@ -37,18 +34,18 @@
                                  class="block w-full"/>
                     </div>
 
-                    <div class="flex mt-6 text-sm">
+                    <div class="flex mt-6 text-md">
                         <label class="flex items-center dark:text-gray-400">
                             <input type="checkbox"
                                    name="remember"
-                                   class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple">
+                                   class="text-yellow-300 form-checkbox focus:border-yellow-300 focus:outline-none focus:shadow-outline-yellow">
                             <span class="ml-2">{{ __('Remember me') }}</span>
                         </label>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 text-lg">
                         <x-button class="block w-full">
-                            {{ __('Log in') }}
+                            <strong>{{ __('Entrar') }}</strong>
                         </x-button>
                     </div>
                 </form>

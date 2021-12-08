@@ -8,10 +8,10 @@
                 <table class="w-full whitespace-no-wrap">
                     <thead>
                         <tr class="text-md font-semibold tracking-wide text-left text-black-500 uppercase bg-yellow-300 border-b">
-                            <th class="px-4 py-3">Nomes</th>
-                            <th class="px-4 py-3">Cidades</th>
-                            <th class="px-4 py-3">Telefones</th>
-                            <th class="px-4 py-3">Habitantes</th>
+                            <th class="px-4 py-3">Nome</th>
+                            <th class="px-4 py-3">Cidade</th>
+                            <th class="px-4 py-3">Telefone</th>
+                            <th class="px-4 py-3">População</th>
                             <th class="px"></th>
                         </tr>
                     </thead>

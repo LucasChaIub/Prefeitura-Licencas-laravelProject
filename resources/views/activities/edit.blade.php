@@ -21,6 +21,12 @@
                       @method('PUT')
                       <div class="grid grid-cols-6 gap-6">
                           <div class="col-span-6 sm:col-span-3">
+                              <label for="time" class="block text-lg font-medium leading-5 text-gray-700">
+                                  {{ __('Horário:') }}
+                                  <input id="time" name="time" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" type="datetime-local" value="{{ $activity->time }}" />
+                              </label>
+                          </div>
+                          <div class="col-span-6 sm:col-span-3">
                               <label for="status" class="block text-lg font-medium leading-5 text-gray-700">
                                   {{ __('Status:') }}
                                   <select id="status" name="status" class="mt-1 form-select block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5">
@@ -29,12 +35,7 @@
                                   </select>
                               </label>
                           </div>
-                          <div class="col-span-6 sm:col-span-3">
-                              <label for="time" class="block text-lg font-medium leading-5 text-gray-700">
-                                  {{ __('Horário:') }}
-                                  <input id="time" name="time" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out sm:text-lg sm:leading-5" type="datetime-local" value="{{ $activity->time }}" />
-                              </label>
-                          </div>
+                          
                           <div class="col-span-6">
                               <label for="description" class="block text-lg font-medium leading-5 text-gray-700">
                                   {{ __('Descrição:') }}
